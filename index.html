@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcelo Ríos | Desarrollador Full Stack Junior</title>
+  <meta name="description" content="Portafolio de Marcelo Ríos, desarrollador Full Stack Junior en formación.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+  <!-- ===== MENÚ ===== -->
+  <header class="header">
+    <a href="#inicio" class="logo">&lt;Marcelo Ríos/&gt;</a>
+    <nav>
+      <button id="btn-menu" class="btn-menu" aria-label="Abrir menú">☰</button>
+      <ul id="menu" class="menu">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#extras">Extras</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <button id="btn-tema" class="btn-tema" aria-label="Cambiar tema">🌙</button>
+  </header>
+
+  <main>
+
+    <!-- ===== INICIO ===== -->
+    <section id="inicio" class="hero">
+      <div class="hero-texto">
+        <p class="saludo">Hola, soy</p>
+        <h1>Marcelo Ríos</h1>
+        <p class="rol">Desarrollador <span id="escritura"></span><span class="cursor">|</span></p>
+        <p>Soy programador junior full stack y estoy egresando de cuarto medio. Aprendí HTML, CSS, JavaScript, Python y MySQL.</p>
+        <div class="botones">
+          <a href="#proyectos" class="btn">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-borde">Contáctame</a>
+        </div>
+      </div>
+
+      <!-- Tarjeta de código: lo más llamativo del inicio -->
+      <div class="codigo">
+        <div class="codigo-barra"><span></span><span></span><span></span></div>
+<pre><code><b>const</b> yo = {
+  nombre: "Marcelo Ríos",
+  estudio: "Skillnest",
+  aprendiendo: ["HTML","CSS","JS","Python","MySQL"],
+  <b>disponible</b>: true
+};</code></pre>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section id="sobre-mi" class="seccion">
+      <h2>Sobre mí</h2>
+      <div class="sobre-grid">
+        <div>
+          <p>Me llamo Marcelo Ríos, estoy saliendo de cuarto medio y soy programador junior full stack.</p>
+          <p>Aprendí HTML, CSS, JavaScript, Python y MySQL. Hasta ahora he desarrollado tres proyectos: Mercaplan, Salva la Ciudad y NovaPet.</p>
+        </div>
+        <div class="contadores">
+          <div><strong class="contador" data-meta="5">0</strong><span>Tecnologías</span></div>
+          <div><strong class="contador" data-meta="3">0</strong><span>Proyectos</span></div>
+          <div><strong class="contador" data-meta="100">0</strong><span>Ganas de aprender</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HABILIDADES ===== -->
+    <section id="habilidades" class="seccion">
+      <h2>Tecnologías y habilidades</h2>
+      <div class="skills">
+        <span class="skill-chip">HTML</span>
+        <span class="skill-chip">CSS</span>
+        <span class="skill-chip">JavaScript</span>
+        <span class="skill-chip">Python</span>
+        <span class="skill-chip">MySQL</span>
+      </div>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section id="proyectos" class="seccion">
+      <h2>Proyectos</h2>
+
+      <div class="proyectos">
+        <article class="tarjeta" data-categoria="web">
+          <div class="tarjeta-img imagen-mercaplan"><span>MP</span></div>
+          <div class="tarjeta-info">
+            <p class="etiqueta-proyecto">Proyecto</p>
+            <h3>Mercaplan</h3>
+            <p class="desc">Proyecto para encontrar la mejor opción de mercado cercano.</p>
+            <p class="techs"><span>Mercado cercano</span></p>
+            <div class="tarjeta-botones"><button class="btn-ver">Ver más</button></div>
+          </div>
+        </article>
+
+        <article class="tarjeta" data-categoria="js">
+          <div class="tarjeta-img imagen-salva"><span>SC</span></div>
+          <div class="tarjeta-info">
+            <p class="etiqueta-proyecto">Proyecto</p>
+            <h3>Salva la Ciudad</h3>
+            <p class="desc">Proyecto para aprender a reciclar y a cuidar el medioambiente.</p>
+            <p class="techs"><span>Reciclaje</span><span>Medioambiente</span></p>
+            <div class="tarjeta-botones"><button class="btn-ver">Ver más</button></div>
+          </div>
+        </article>
+
+        <article class="tarjeta" data-categoria="js">
+          <div class="tarjeta-img imagen-novapet"><span>NP</span></div>
+          <div class="tarjeta-info">
+            <p class="etiqueta-proyecto">Proyecto</p>
+            <h3>NovaPet</h3>
+            <p class="desc">Registro de una mascota guardado en un sitio web optimizado para almacenar datos.</p>
+            <p class="techs"><span>Mascotas</span><span>Almacenamiento de datos</span></p>
+            <div class="tarjeta-botones"><button class="btn-ver">Ver más</button></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== EXTRAS ===== -->
+    <section id="extras" class="seccion">
+      <h2>Tareas y trabajos adicionales</h2>
+      <p>Además de mis proyectos principales, he realizado ejercicios para practicar los contenidos vistos durante mi formación.</p>
+      <button class="acordeon">Ejercicios de JavaScript</button>
+      <div class="panel"><p>Prácticas para trabajar con variables, funciones, arreglos, condiciones y eventos.</p></div>
+      <button class="acordeon">Prácticas de HTML y CSS</button>
+      <div class="panel"><p>Ejercicios de estructura de páginas, estilos, formularios y adaptación a distintos tamaños de pantalla.</p></div>
+      <button class="acordeon">Prácticas de Python</button>
+      <div class="panel"><p>Ejercicios para practicar lo que aprendí de Python.</p></div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="seccion">
+      <h2>Contacto</h2>
+      <div class="contacto-grid">
+        <div>
+          <p>Si quieres conocer más sobre mi trabajo o ponerte en contacto conmigo, puedes escribirme o visitar mi perfil profesional.</p>
+          <p>📧 <a href="mailto:marcelobenjaminriosalvornoz@gmail.com">marcelobenjaminriosalvornoz@gmail.com</a></p>
+          <p>💼 <a href="https://www.linkedin.com/in/marcelo-rios" target="_blank" rel="noopener">Mi perfil de LinkedIn</a></p>
+          <p>📞 <a href="tel:+56929837340">+56 9 2983 7340</a></p>
+          <p>💬 <a href="https://wa.me/56948795814" target="_blank" rel="noopener">WhatsApp: +56 9 4879 5814</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Marcelo Ríos. Hecho con HTML, CSS y JavaScript.</p>
+  </footer>
+
+  <!-- ===== MODAL DE PROYECTO ===== -->
+  <div id="modal" class="modal">
+    <div class="modal-caja">
+      <button id="cerrar-modal" class="cerrar" aria-label="Cerrar">✕</button>
+      <h3 id="modal-titulo"></h3>
+      <p id="modal-desc"></p>
+      <p id="modal-techs" class="techs"></p>
+    </div>
+  </div>
+
+  <button id="btn-subir" class="btn-subir" aria-label="Volver arriba">↑</button>
+
+  <script src="static/js/script.js"></script>
+</body>
+</html>
